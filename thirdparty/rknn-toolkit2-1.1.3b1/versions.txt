@@ -1,0 +1,17 @@
+The versions of each component of rknn-toolkit2-1.1.3b1 is as follows:
+    packages/rknn_toolkit2-1.1.3b1_ab65cc5d-cp36-cp36m-linux_x86_64.whl        1.1.3b1
+    board/Android/arm64-v8a/vendor/bin/rknn_server                             1.1.1 (635500e build: 2021-09-03 16:31:41)
+    board/Android/arm64-v8a/vendor/lib/librknnrt.so                            1.1.3b1 (176fc8b7d@2021-12-30T16:06:17)
+    board/Linux/aarch64/usr/bin/rknn_server                                    1.1.1 (635500e build: 2021-09-03 16:31:54)
+    board/Linux/aarch64/usr/lib/librknnrt.so                                   1.1.3b1 (176fc8b7d@2021-12-30T16:04:46)
+
+Because the versions of toolkit2/rknn_server/librknnrt.so must matched, So please use the following command to query these versions,
+And make sure they are consistent with the above versions:
+    RKNN-Toolkit2:           pip3 list |grep 'rknn'
+    Android rknn_server:     strings /vendor/lib64/usr/bin/rknn_server |grep 'build:'
+    Android librknnrt.so:    strings /vendor/lib64/librknnrt.so |grep 'librknnrt version:'
+    Linux rknn_server:       strings /usr/bin/rknn_server |grep 'build:'
+    Linux librknnrt.so:      strings /usr/lib/librknnrt.so |grep 'librknnrt version:'
+If the queried version is inconsistent with the above version, please update these components.
+For the update method of rknn_server and librknnrt.so, please refer to board/board_readme.md.
+

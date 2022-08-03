@@ -1,0 +1,3 @@
+/Users/bocvv/neteasy/work/offline-study-status/C++/tools/build/CMakeFiles/rebuild_cache.dir
+/Users/bocvv/neteasy/work/offline-study-status/C++/tools/build/CMakeFiles/edit_cache.dir
+/Users/bocvv/neteasy/work/offline-study-status/C++/tools/build/CMakeFiles/ss_tool.dir
